@@ -22,8 +22,8 @@ print('my_sum L',my_sum(*L))
 
 def printInfo(**kw):
 	print('printInfo')
-	for key in kw:
-		print(key+":"+str(kw[key]))
+	for k,v in kw.items():
+		print(k+":"+str(v))
 
 printInfo(name='dotmoon',age=22,country='China')
 info = {'name':'小明','age':15,'country':'China'}
